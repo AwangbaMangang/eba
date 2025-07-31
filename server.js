@@ -6,8 +6,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const MINT_API_URL = "https://mint-api.example.com/translate"; // Replace with actual MinT API URL
-const MINT_API_KEY = "YOUR_MINT_API_KEY"; // Replace with your actual MinT API key
+const MINT_API_URL = "https://gerrit.wikimedia.org/r/mediawiki/services/machinetranslation"; // Replace with actual MinT API URL
+const MINT_API_KEY = "MinT"; // Replace with your actual MinT API key
 
 async function fetchWikiText(pageUrl) {
   const match = pageUrl.match(/\/wiki\/([^?#]+)/);
